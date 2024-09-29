@@ -6,6 +6,7 @@ def login():
     username = "jungle_queen"
     password = "15072541Wa_"
 
+    # ส่งคำขอ GET พร้อม Basic Authentication
     response = requests.get(url, auth=HTTPBasicAuth(username, password))
 
     if response.status_code == 200:
